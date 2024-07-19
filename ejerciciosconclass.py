@@ -20,3 +20,12 @@ class Miembro:
         self.nombre = nombre
         self.numero_miembre = numero_miembro
         self.libros_prestados = []
+
+    def prestar_libro(self, libro):
+        if not libro.prestado:
+            libro.prestamo()
+            self.libros_prestados.append(libro)
+        
+        else:
+            print(f"El libro {libro.titulo} ya esta prestado")
+
