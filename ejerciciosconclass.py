@@ -1,3 +1,6 @@
+#SISTEMA DE GESTION PARA BIBLIOTECAS
+#Crear clases para representar libros y miembros de una biblioteca
+
 class Libro:
     def __init__(self, titulo, autor, anio_publicacion, isbn):
         self.titulo = titulo
