@@ -17,3 +17,13 @@ def jugar_piedra_papel_tijera():
 
     while True:
         print("Bienvenido al juego, priedra papel o tijera")
+        print("Por favor ingresa una opcion")
+        print("4. para salir")
+        
+        jugador = input("Ingresa tu opcion-->")
+        jugador.lower()
+
+        if jugador == "4":
+            print("Gracias por jugar ")
+            break
+jugar_piedra_papel_tijera()
