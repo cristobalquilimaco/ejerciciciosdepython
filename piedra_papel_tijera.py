@@ -13,4 +13,4 @@ Comparar las elecciones para determinar el ganador.
 Mostrar el resultado y preguntar al jugador si desea jugar de nuevo."""
 
 def jugar_piedra_papel_tijera():
-    
+    opciones = ["piedra", "papel", "tijera"]
