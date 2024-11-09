@@ -22,6 +22,13 @@ def set_working_directory():
         print(f"El directorio introducido ha cambiado a: {path}")
     else:
         print("El directorio introducido no existe")
+    
+def create_repository():
+    if os.path.isdir(".git"):
+            print("Ya existe un repositorio en este directorio")
+    else:
+        run_command("git init")
+        print("Repositorio inicializado")
 
 while True:
 
@@ -40,12 +47,14 @@ while True:
     print("12. Salir")
 
     choice = input("selecciona una opcion (1 al 12): ")
+    
     print("Directorio actual de trabajo")
+
     run_command("cd")
 
     match choice:
         case "1":
-            pass
+            set_working_directory()
         case "2":
             pass
         case "3":
