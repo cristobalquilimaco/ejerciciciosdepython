@@ -1,7 +1,27 @@
-import os #Libreria que provee una manera versatil de utilizar funcionalidades dependientes del sistema operativo 
+import os #Modulo que provee una manera versatil de utilizar funcionalidades dependientes del sistema operativo 
+import subprocess
+
+def run_command(command:str):
+    try:
+        result = subprocess.run(
+            command,
+            shell=True,
+            check=True,
+            text=True,
+            capture_output=True
+        )
+        print(result.stdout.split())
+    except Exception as e:
+        print(f"error: {e.stderr.split()}")
+
 def set_working_directory():
 
     path = input("Introduce el directorio completo de trabajo:")
+    if os.path.isdir(path):
+        os.chdir(path)
+        print(f"El directorio introducido ha cambiado a: {path}")
+    else:
+        print("El directorio introducido no existe")
 
 while True:
 
