@@ -1,3 +1,8 @@
+import os #Libreria que provee una manera versatil de utilizar funcionalidades dependientes del sistema operativo 
+def set_working_directory():
+
+    path = input("Introduce el directorio completo de trabajo:")
+
 while True:
 
     print("\nGit y gitHub CLI - Opciones:")
@@ -40,7 +45,7 @@ while True:
         case "11":
             pass
         case "12":
-            print("Saliendo")
+            print("Saliendo...")
             break
         case _:
             print("Opcion no valida")
