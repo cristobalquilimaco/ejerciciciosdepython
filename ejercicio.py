@@ -39,7 +39,9 @@ while True:
     print("11. Hacer push")
     print("12. Salir")
 
-    choice = input("selecciona una opcion (1 al 12): ")\
+    choice = input("selecciona una opcion (1 al 12): ")
+    print("Directorio actual de trabajo")
+    run_command("cd")
 
     match choice:
         case "1":
