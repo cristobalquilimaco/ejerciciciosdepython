@@ -10,13 +10,13 @@ def run_command(command:str):
             text=True,
             capture_output=True
         )
-        print(result.stdout.split())
+        print(result.stdout.strip())
     except Exception as e:
-        print(f"error: {e.stderr.split()}")
+        print(f"Error: {e.stderr.strip()}")
 
 def set_working_directory():
 
-    path = input("Introduce el directorio completo de trabajo:")
+    path = input("\nIntroduce el directorio completo de trabajo: ")
     if os.path.isdir(path):
         os.chdir(path)
         print(f"El directorio introducido ha cambiado a: {path}")
@@ -32,12 +32,12 @@ def create_repository():
         print("Repositorio inicializado")
 
 def create_branch():
-    branch_name = input("Nombre de la nueva rama")
+    branch_name = input("Nombre de la nueva rama: ")
     run_command(f"git branch {branch_name}")
     print(f"Rama {branch_name}")
 
 def switch_branch():
-    branch_name = input("Nombre de la rama a la que quieres cambiar")
+    branch_name = input("Nombre de la rama a la que quieres cambiar: ")
     run_command(f"git checkout {branch_name}")
     print(f"Rama {branch_name}")
 
@@ -45,7 +45,7 @@ def show_pending_files():
     run_command("git status -s")
 
 def make_commit():
-    message = input("introduce un Mensaje para el commit:")
+    message = input("introduce un Mensaje para el commit: ")
     run_command("git add .")
     run_command(f"git commit -m \"{message}\"")
 
@@ -53,11 +53,11 @@ def show_commit_history():
     run_command("git log --oneline")
 
 def delete_branch():
-    branch_name = input("Nombre de la rama que quieres eliminar")
+    branch_name = input("Nombre de la rama que quieres eliminar: ")
     run_command(f"git branch -d {branch_name}")
 
 def set_remote_repository():
-    remote_url = input("URL del repositorio remoto")
+    remote_url = input("URL del repositorio remoto: ")
     run_command(f"git remote add origin {remote_url}")
     run_command("git branch --set-upstream origin main")
 
@@ -81,13 +81,13 @@ while True:
     print("9. Establecer repositorio remoto")
     print("10. Hacer pull")
     print("11. Hacer push")
-    print("12. Salir")
+    print("12. Salir\n")
 
     choice = input("selecciona una opcion (1 al 12): ")
     
-    print("Directorio actual de trabajo")
+    print("Directorio actual de trabajo:")
 
-    run_command("cd")
+    run_command("cd\n")
 
     match choice:
         case "1":
