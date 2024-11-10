@@ -44,6 +44,12 @@ def switch_branch():
 def show_pending_files():
     run_command("git status -s")
 
+def make_commit():
+    message = input("introduce un Mensaje para el commit:")
+    run_command("git add .")
+    run_command(f"git commit -m \"{message}\"")
+
+
 while True:
 
     print("\nGit y gitHub CLI - Opciones:")
@@ -76,9 +82,9 @@ while True:
         case "4":
             switch_branch()
         case "5":
-            pass
+            show_pending_files()
         case "6":
-            pass
+            make_commit()
         case "7":
             pass
         case "8":
