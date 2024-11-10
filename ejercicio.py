@@ -56,6 +56,12 @@ def delete_branch():
     branch_name = input("Nombre de la rama que quieres eliminar")
     run_command(f"git branch -d {branch_name}")
 
+def set_remote_repository():
+    remote_url = input("URL del repositorio remoto")
+    run_command(f"git remote add origin {remote_url}")
+    run_command("git branch --set-upstream origin main")
+
+
 while True:
 
     print("\nGit y gitHub CLI - Opciones:")
@@ -96,7 +102,7 @@ while True:
         case "8":
             delete_branch()
         case "9":
-            pass
+            set_remote_repository()
         case "10":
             pass
         case "11":
