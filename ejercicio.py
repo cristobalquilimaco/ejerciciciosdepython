@@ -49,6 +49,9 @@ def make_commit():
     run_command("git add .")
     run_command(f"git commit -m \"{message}\"")
 
+def show_commit_history():
+    run_command("git log --oneline")
+
 
 while True:
 
@@ -86,7 +89,7 @@ while True:
         case "6":
             make_commit()
         case "7":
-            pass
+            show_commit_history()
         case "8":
             pass
         case "9":
