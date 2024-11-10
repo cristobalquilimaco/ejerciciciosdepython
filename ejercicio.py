@@ -52,6 +52,9 @@ def make_commit():
 def show_commit_history():
     run_command("git log --oneline")
 
+def delete_branch():
+    branch_name = input("Nombre de la rama que quieres eliminar")
+    run_command(f"git branch -d {branch_name}")
 
 while True:
 
@@ -91,7 +94,7 @@ while True:
         case "7":
             show_commit_history()
         case "8":
-            pass
+            delete_branch()
         case "9":
             pass
         case "10":
