@@ -28,7 +28,21 @@ def create_repository():
             print("Ya existe un repositorio en este directorio")
     else:
         run_command("git init")
+        run_command("git branch -M main")
         print("Repositorio inicializado")
+
+def create_branch():
+    branch_name = input("Nombre de la nueva rama")
+    run_command(f"git branch {branch_name}")
+    print(f"Rama {branch_name}")
+
+def switch_branch():
+    branch_name = input("Nombre de la rama a la que quieres cambiar")
+    run_command(f"git checkout {branch_name}")
+    print(f"Rama {branch_name}")
+
+def show_pending_files():
+    run_command("git status -s")
 
 while True:
 
@@ -56,11 +70,11 @@ while True:
         case "1":
             set_working_directory()
         case "2":
-            pass
+            create_repository()
         case "3":
-            pass
+            create_branch()
         case "4":
-            pass
+            switch_branch()
         case "5":
             pass
         case "6":
