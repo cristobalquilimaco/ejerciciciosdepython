@@ -61,7 +61,12 @@ def set_remote_repository():
     run_command(f"git remote add origin {remote_url}")
     run_command("git branch --set-upstream origin main")
 
+def make_pull():
+    run_command("git pull")
 
+def make_push():
+    run_command("git push")
+    
 while True:
 
     print("\nGit y gitHub CLI - Opciones:")
@@ -104,9 +109,9 @@ while True:
         case "9":
             set_remote_repository()
         case "10":
-            pass
+            make_pull()
         case "11":
-            pass
+            make_push()
         case "12":
             print("Saliendo...")
             break
