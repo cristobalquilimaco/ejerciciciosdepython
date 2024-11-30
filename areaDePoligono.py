@@ -27,3 +27,9 @@ def calcularAreaPoligono(poligon_type, **params):
         if base and altura:
             return base * altura
         return "Faltan dimensiones para calcular el rectangulo"
+    
+    else:
+        return "Tipo de poligono no soportado"
+
+area_triangulo = calcularAreaPoligono("triangulo", base=10 , altura=5)
+area_cuadrado = calcularAreaPoligono("cuadrado", lado=3 )
