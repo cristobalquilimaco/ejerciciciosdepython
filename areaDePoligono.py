@@ -8,7 +8,7 @@
 """
 
 def calcularAreaPoligono(poligon_type, **params):
-    if poligon_type == "tiangulo":
+    if poligon_type == "triangulo":
         base = params.get("base")
         altura = params.get("altura")
         if base and altura:
