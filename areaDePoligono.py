@@ -11,3 +11,6 @@ def calcularAreaPoligono(poligon_type, **params):
     if poligon_type == "tiangulo":
         base = params.get("base")
         altura = params.get("altura")
+        if base and altura:
+            return (base * altura) / 2
+        return "Faltan dimensiones para calcular el area del triangulo"
