@@ -33,3 +33,8 @@ def calcularAreaPoligono(poligon_type, **params):
 
 area_triangulo = calcularAreaPoligono("triangulo", base=10 , altura=5)
 area_cuadrado = calcularAreaPoligono("cuadrado", lado=3 )
+area_rectangulo = calcularAreaPoligono("rectangulo", base=30, altura= 4)
+
+print(f"El area del triangulo es igual a: {area_triangulo}")
+print(f"El area del cuadrado es igual a: {area_cuadrado}")
+print(f"El area del rectangulo es igual a: {area_rectangulo}")
