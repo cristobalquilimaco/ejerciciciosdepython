@@ -8,18 +8,20 @@
 """
 
 def calcularAreaPoligono(poligon_type, **params):
+
     if poligon_type == "triangulo":
         base = params.get("base")
         altura = params.get("altura")
         if base and altura:
-            return (base * altura) / 2
-        return "Faltan dimensiones para calcular el area del triangulo"
+            return(base * altura) / 2
+        return "Faltan areas en el triangulo"
     
     elif poligon_type == "cuadrado":
-        lado = params.get("lado") #metodo .get() se usa para obtener el valor de una clave especifica en un
+        lado = params.get("lado")
         if lado:
             return lado **2
-        return "Falta la dimension del lado para calcular el area del cuadrado"
+        return "Faltan lados en el"
+
     
     elif poligon_type == "rectangulo":
         base = params.get("base")
