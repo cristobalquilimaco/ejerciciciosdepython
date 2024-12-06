@@ -35,7 +35,7 @@ def jugar_piedra_papel_tijera():
             break
         if jugador == computer:
             print("Empate")
-        elif jugador == "Piedra" or computer == "Tijera":
+        elif jugador == "Piedra" and computer == "Tijera":
             print(f"Felicidades Ganaste! --> computer eligio {computer}")
             break
         elif jugador == "Papel" or computer == "Piedra":
