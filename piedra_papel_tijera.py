@@ -28,7 +28,7 @@ def jugar_piedra_papel_tijera():
         jugador = input("Ingresa tu opcion-->")
         jugador.lower()
         computer = random.choice(opciones)
-        computer.lower
+        computer.lower()
 
         if jugador == "4":
             print("Gracias por jugar ")
