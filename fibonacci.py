@@ -21,3 +21,8 @@
 def generar_fibonacci():
     # genera los primeros numeros n de la sucesion fibonacci
     return []
+
+#Solicitar el numero al usuario
+
+n = int(input("Ingresa un numero en terminos de la sucesion fibonacci: "))
+
