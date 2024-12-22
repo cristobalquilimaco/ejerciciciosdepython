@@ -8,7 +8,7 @@
 # Imprimir "FizzBuzz" si el número es divisible por ambos (3 y 5).
 # Imprimir el número si no es divisible por 3 ni por 5.
 
-def FizzBuzz():
+def fizz_buzz():
     for num in range(1, 101):
         if num % 3 == 0 and num % 5 == 0:
             print("FizzBuzz")
@@ -18,3 +18,5 @@ def FizzBuzz():
             print("Buzz")
         else:
             print(num)
+
+fizz_buzz()
