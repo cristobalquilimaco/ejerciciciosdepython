@@ -26,3 +26,12 @@ def generar_fibonacci():
 
 n = int(input("Ingresa un numero en terminos de la sucesion fibonacci: "))
 
+#Validar que el numero sea positivo
+
+if n <= 0:
+    print("Por favor, ingresa un numero entero positivo")
+
+else:
+    #Llamar a la funcion y mostrar el resultado
+    fibonacci = generar_fibonacci()
+    print(f"los numeros {n} terminos de la sucesion fibonacci son: {fibonacci}")
