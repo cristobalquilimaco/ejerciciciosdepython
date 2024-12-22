@@ -23,3 +23,4 @@ def fizz_buzz():
         else:
             print(num)
 
+fizz_buzz()
