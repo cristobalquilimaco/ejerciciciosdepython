@@ -13,3 +13,11 @@
 # n números de la sucesión de Fibonacci.
 # Imprima la secuencia resultante.
 
+
+# Tareas:
+# Completa la función generar_fibonacci para que calcule correctamente la sucesión.
+# Prueba el código con diferentes valores de entrada para asegurarte de que funciona.
+
+def generar_fibonacci():
+    # genera los primeros numeros n de la sucesion fibonacci
+    return []
