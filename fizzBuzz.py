@@ -9,14 +9,17 @@
 # Imprimir el número si no es divisible por 3 ni por 5.
 
 def fizz_buzz():
+    #Creo un ciclo for para recorrer los numero del 1 al 100    
     for num in range(1, 101):
+        #Creo una condicion que valide si el numero es divisible entre 3 y 5
         if num % 3 == 0 and num % 5 == 0:
             print("FizzBuzz")
+        #Esta condición valida si el numero es divisible entre 3
         elif num % 3 == 0:
             print("Fizz")
+        #Condicion que valida si el numero es divisible entre 5
         elif num % 5 == 0:
             print("Buzz")
         else:
             print(num)
 
-fizz_buzz()
