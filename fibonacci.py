@@ -25,6 +25,13 @@ def generar_fibonacci():
     elif n == 2:
         return [1, 2]
 
+    fibonacci =[0, 1]
+    for _ in range(2, n):
+        #Agregar el siguiente termino como la suma de los dos anteriores
+        siguiente = fibonacci[-1] + fibonacci[-2]
+        fibonacci.append(siguiente)
+    return fibonacci
+
 #Solicitar el numero al usuario
 
 n = int(input("Ingresa un numero en terminos de la sucesion fibonacci: "))
