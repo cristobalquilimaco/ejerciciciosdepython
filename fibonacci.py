@@ -20,7 +20,10 @@
 
 def generar_fibonacci():
     # genera los primeros numeros n de la sucesion fibonacci
-    return []
+    if n == 1:
+        return [0]
+    elif n == 2:
+        return [1, 2]
 
 #Solicitar el numero al usuario
 
