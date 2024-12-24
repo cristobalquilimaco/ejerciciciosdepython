@@ -3,8 +3,13 @@
 #  * Hecho esto, imprime los números primos entre 1 y 100.
 #  */
 
-def es_primo():
+def es_primo(num):
     #Aqui se determina si un numero es primo 
     if num <= 1:
         return False
-    for i in range(2, int(num ** 0.5) + 1):
+    for i in range(2, int(num ** 0.5) + 1): #El bucle comienza en 2 porque es el numero divisible 
+        if num % i == 0: #Aqui valido si el numero dividido entre el indice es igual a 0
+            return False
+    return True
+
+numero = int(input("Ingresa el numero para verificar se es primo"))
