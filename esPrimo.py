@@ -4,4 +4,7 @@
 #  */
 
 def es_primo():
-    
+    #Aqui se determina si un numero es primo 
+    if num <= 1:
+        return False
+    for i in range(2, int(num ** 0.5) + 1):
