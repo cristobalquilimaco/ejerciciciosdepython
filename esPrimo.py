@@ -17,3 +17,7 @@ if es_primo(numero):
     print(f"{numero} es un numero primo")
 else:
     print(f"{numero} no es un numero primo")
+
+print("Números primos entre 1 y 100:")
+primos = [n for n in range(1, 101) if es_primo(n)]
+print(primos)
