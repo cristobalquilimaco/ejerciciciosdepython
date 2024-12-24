@@ -13,3 +13,7 @@ def es_primo(num):
     return True
 
 numero = int(input("Ingresa el numero para verificar se es primo"))
+if es_primo(numero):
+    print(f"{numero} es un numero primo")
+else:
+    print(f"{numero} no es un numero primo")
