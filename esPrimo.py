@@ -3,3 +3,5 @@
 #  * Hecho esto, imprime los números primos entre 1 y 100.
 #  */
 
+def es_primo():
+    
