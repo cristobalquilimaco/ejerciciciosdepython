@@ -11,6 +11,8 @@
 
 squares = [x ** 2 for x in range(1, 11) ] #X va a ser el valor que va a tener cada uno de los elementos, luego se aplica el for para que aplique la formula a todos los elementos
 # print(f"Los cuadrados son: ", squares)
+#------- x**2 es la EXPRESION que calcula el cuadrado de cada numero
+# for x in range() itera sobre la lista del rango
 
 
 celsius = [0,10,20,30,40]
@@ -19,7 +21,7 @@ farenheit = [(temp * 9/5) *32 for temp in celsius]
 # print(f"La temperatura actual es de: {farenheit}")
 
 evens = [x for x in range(1, 21) if x%2 ==0]
-# print(evens)
+print(evens)
 
 
 matrix = [[1,2,3],
@@ -32,3 +34,4 @@ tranposed = [[row[i] for row in matrix] for i in range(len(matrix[0]))]
 print(matrix)
 for row in tranposed:
     print(row)
+
