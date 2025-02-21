@@ -8,4 +8,5 @@ class Book:
         if self.available:
             self.available = False
             print(f"El libro {self.title} ha sido prestado")
-    
+        else:
+            print(f"El libro {self.title} no esta disponible")
