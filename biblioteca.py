@@ -21,5 +21,9 @@ class User:
         self.user_id = user_id
         self.borrowed_books = [] #lista
 
-    def borrow_books():
-        if 
+    def borrow_books(self, book):
+        if book.available:
+            book.borrow()
+            self.borrowed_books.append(book)
+        else:
+            print(f"el libro {book.title} no esta disponible")
