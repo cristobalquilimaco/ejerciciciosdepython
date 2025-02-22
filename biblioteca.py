@@ -10,3 +10,7 @@ class Book:
             print(f"El libro {self.title} ha sido prestado")
         else:
             print(f"El libro {self.title} no esta disponible")
+
+    def return_book(self):
+        self.available = True
+        print(f"El libro ya ")
