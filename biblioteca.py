@@ -19,4 +19,7 @@ class User:
     def __init__(self, name, user_id):
         self.name = name
         self.user_id = user_id
-        self.borrowed_books = []
+        self.borrowed_books = [] #lista
+
+    def borrow_books():
+        if 
