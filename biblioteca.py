@@ -14,3 +14,7 @@ class Book:
     def return_book(self):
         self.available = True
         print(f"El libro {self.title} ha sido devuelto")
+
+class User:
+    def __init__(self, name, user_id):
+        self.name = name
