@@ -13,4 +13,4 @@ class Book:
 
     def return_book(self):
         self.available = True
-        print(f"El libro ya ")
+        print(f"El libro {self.title} ha sido devuelto")
