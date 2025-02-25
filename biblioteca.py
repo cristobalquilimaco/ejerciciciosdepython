@@ -55,3 +55,4 @@ class Library:
                 print(f"{book.title} por {book.author}")
 
 book1 = Book("El principito", "Antoine de Saint-Exupéry")
+book2 = Book("1994", "George Orwell")
