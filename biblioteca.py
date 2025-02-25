@@ -50,7 +50,8 @@ class Library:
 
     def show_available_books(self):
         print("Los libros disponibles:")
-        for book in self.add_books:
+        for book in self.books:
             if book.available:
                 print(f"{book.title} por {book.author}")
-        
+
+book1 = Book("El principito", "Antoine de Saint-Exupéry")
