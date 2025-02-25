@@ -37,7 +37,7 @@ class User:
 
 class Library:
     def __init__(self):
-        self.books = []
+        self.users = []
         self.book = []
 
     def add_book(self, book):
