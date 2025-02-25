@@ -49,4 +49,8 @@ class Library:
         print(f"El usuario {user.name} ha sido registrado")
 
     def show_available_books(self):
-
+        print("Los libros disponibles:")
+        for book in self.add_books:
+            if book.available:
+                print(f"{book.title} por {book.author}")
+        
