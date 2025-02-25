@@ -27,3 +27,5 @@ class User:
             self.borrowed_books.append(book)
         else:
             print(f"el libro {book.title} no esta disponible")
+
+        def return_book(self, book):
