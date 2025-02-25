@@ -48,4 +48,5 @@ class Library:
         self.users.append(user)
         print(f"El usuario {user.name} ha sido registrado")
 
+    def show_available_books(self):
 
