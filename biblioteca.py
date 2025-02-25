@@ -62,3 +62,7 @@ book2 = Book("1994", "George Orwell")
 user1 = User("Carli", "001")
 
 #Crear la biblioteca
+library = Library()
+library.add_book(book1)
+library.add_book(book2)
+library.register_user(user1)
