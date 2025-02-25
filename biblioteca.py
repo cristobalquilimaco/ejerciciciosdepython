@@ -54,5 +54,11 @@ class Library:
             if book.available:
                 print(f"{book.title} por {book.author}")
 
+# Crear los libros
 book1 = Book("El principito", "Antoine de Saint-Exupéry")
 book2 = Book("1994", "George Orwell")
+
+#Crear Usuario
+user1 = User("Carli", "001")
+
+#Crear la biblioteca
