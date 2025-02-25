@@ -28,10 +28,13 @@ class User:
         else:
             print(f"el libro {book.title} no esta disponible")
 
-        def return_book(self, book):
-            if book in self.borrowed_books:
-                book.return_book()
-                self.borrowed_books.remove(book)
-            else:
-                print(f"El libro {book.title} no esta en la lista de prestados")
+    def return_book(self, book):
+        if book in self.borrowed_books:
+            book.return_book()
+            self.borrowed_books.remove(book)
+        else:
+            print(f"El libro {book.title} no esta en la lista de prestados")
 
+class Library:
+    def __init__(self):
+        pass
