@@ -43,4 +43,6 @@ class Library:
     def add_book(self, book):
         self.book.append(book)
         print(f"el libro {book.title} ha sido agregado")
-        
+    
+    def register_user(self.user):
+        pass
