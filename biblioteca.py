@@ -50,7 +50,7 @@ class Library:
 
     def show_available_books(self):
         print("Los libros disponibles:")
-        for book in self.books:
+        for book in self.book:
             if book.available:
                 print(f"{book.title} por {book.author}")
 
@@ -66,3 +66,9 @@ library = Library()
 library.add_book(book1)
 library.add_book(book2)
 library.register_user(user1)
+
+# MOSTRAR LIBROS
+library.show_available_books()
+
+
+#REALIZAR PRESTAMOS
