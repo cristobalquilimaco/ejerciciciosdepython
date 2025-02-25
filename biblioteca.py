@@ -37,4 +37,10 @@ class User:
 
 class Library:
     def __init__(self):
-        pass
+        self.books = []
+        self.book = []
+
+    def add_book(self, book):
+        self.book.append(book)
+        print(f"el libro {book.title} ha sido agregado")
+        
