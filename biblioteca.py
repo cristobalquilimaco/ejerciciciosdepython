@@ -72,3 +72,4 @@ library.show_available_books()
 
 
 #REALIZAR PRESTAMOS
+user1.borrow_books(book1)
