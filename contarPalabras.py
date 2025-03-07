@@ -11,6 +11,10 @@ import collections
 
 def contarPalabras():
     texto = texto.lower()
+    palabras = re.findall(r'\b\w+\b', texto)
+
+    frecuencia = Counter(palabras)
+
 
 texto = "Hola, hola! ¿Cómo estás? Espero que estés bien. Hola otra vez."
 resultado = contar_palabras(texto)
