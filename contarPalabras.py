@@ -9,6 +9,9 @@
 import re
 import collections
 
+def contarPalabras():
+    
+
 texto = "Hola, hola! ¿Cómo estás? Espero que estés bien. Hola otra vez."
 resultado = contar_palabras(texto)
 print(resultado)
