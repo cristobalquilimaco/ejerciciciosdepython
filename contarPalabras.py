@@ -6,7 +6,8 @@
 # Ignorar signos de puntuación como comas, puntos, signos de exclamación o interrogación.
 # Devolver el diccionario ordenado alfabéticamente por las palabras.
 
-
+import re
+import collections
 
 texto = "Hola, hola! ¿Cómo estás? Espero que estés bien. Hola otra vez."
 resultado = contar_palabras(texto)
