@@ -27,15 +27,17 @@ def jugar_piedra_papel_tijera():
         
         jugador = input("Ingresa tu opcion-->")
         jugador.lower()
+        print(jugador)
         computer = random.choice(opciones)
         computer.lower()
+        print(computer)
 
         if jugador == "4":
             print("Gracias por jugar ")
             break
         if jugador == computer:
             print("Empate")
-        elif jugador == "Piedra" and computer == "Tijera":
+        elif jugador == "Piedra" or computer == "Tijera":
             print(f"Felicidades Ganaste! --> computer eligio {computer}")
             break
         elif jugador == "Papel" or computer == "Piedra":
@@ -45,6 +47,6 @@ def jugar_piedra_papel_tijera():
             print(f"Felicidades Ganaste! --> computer eligio {computer}")
             break
         else:
-            print(f"Perdiste --> computer eligio {computer}")
+            print(f"Perdiste --> computer eligio {computer}\n")
 
 jugar_piedra_papel_tijera()
