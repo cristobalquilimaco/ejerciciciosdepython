@@ -5,3 +5,9 @@
 # Ignorar mayúsculas y minúsculas (es decir, "Hola" y "hola" cuentan como la misma palabra).
 # Ignorar signos de puntuación como comas, puntos, signos de exclamación o interrogación.
 # Devolver el diccionario ordenado alfabéticamente por las palabras.
+
+
+
+texto = "Hola, hola! ¿Cómo estás? Espero que estés bien. Hola otra vez."
+resultado = contar_palabras(texto)
+print(resultado)
