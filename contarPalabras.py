@@ -7,13 +7,15 @@
 # Devolver el diccionario ordenado alfabéticamente por las palabras.
 
 import re
-import collections
+from collections import Counter
 
-def contarPalabras():
+def contar_palabras():
     texto = texto.lower()
     palabras = re.findall(r'\b\w+\b', texto)
 
     frecuencia = Counter(palabras)
+
+    return dict(sorted(frecuencia.items()))
 
 
 texto = "Hola, hola! ¿Cómo estás? Espero que estés bien. Hola otra vez."
