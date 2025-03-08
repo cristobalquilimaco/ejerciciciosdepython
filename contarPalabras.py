@@ -9,7 +9,7 @@
 import re
 from collections import Counter
 
-def contar_palabras():
+def contar_palabras(texto):
     texto = texto.lower()
     palabras = re.findall(r'\b\w+\b', texto)
 
