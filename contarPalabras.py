@@ -10,7 +10,7 @@ import re
 from collections import Counter
 
 def contar_palabras(texto):
-    texto = texto.lower()
+    texto = texto.lower() #metodo lower para convertir las palabras en minusculas
     palabras = re.findall(r'\b\w+\b', texto)
 
     frecuencia = Counter(palabras)
