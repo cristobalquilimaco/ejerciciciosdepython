@@ -1,13 +1,13 @@
 from collections import defaultdict
 
 def count_products(orders: list[str]) -> defaultdict:
-    #crea un idccionario con valor por defecto 0
+    #crea un diccionario con valor por defecto 0
     product_count = defaultdict(int)
     for product in orders:
         product_count[product] +=1
-        return product_count
+    return product_count
     
 
-orders = ['lapto', 'smartphone', 'laptop', 'tablet']
+orders = ['laptop', 'smartphone', 'laptop', 'tablet']
 count = count_products(orders)
 print(count)
