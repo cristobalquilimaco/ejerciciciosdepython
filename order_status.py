@@ -14,4 +14,5 @@ def check_order_status(status: OrderStatus):
     elif status == OrderStatus.DELIVERED:
         return "Order has been Delivered"
     
-    
+
+print(check_order_status(OrderStatus.PEDING))
