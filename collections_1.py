@@ -10,3 +10,4 @@ def count_products(orders: list[str]) -> defaultdict:
 
 orders = ['lapto', 'smartphone', 'laptop', 'tablet']
 count = count_products(orders)
+print(count)
