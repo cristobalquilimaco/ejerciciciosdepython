@@ -5,6 +5,7 @@ def manage_delivery_queue() -> deque:
     delivery_queue = deque(["order_1", "order_2", "order_3"])
     delivery_queue.append("order_4") #Agrega valor al final de la cola
     delivery_queue.appendleft("order_0") #Grega valor al principio de la cola
+    delivery_queue.pop() #Elimina el valor que esta al final de la lista
     return delivery_queue
 
 queue = manage_delivery_queue()
