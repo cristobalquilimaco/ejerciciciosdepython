@@ -7,3 +7,5 @@ def manage_delivery_queue() -> deque:
     delivery_queue.appendleft("order_0") #Grega valor al principio de la cola
     return delivery_queue
 
+queue = manage_delivery_queue()
+print(queue)
