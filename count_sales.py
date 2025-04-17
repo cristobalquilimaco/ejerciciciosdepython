@@ -6,3 +6,4 @@ def counter_sales(products: list[str]) ->Counter:
 
 sales = ["laptop", "smartphone", "laptop", "tablet"]
 result = counter_sales(sales)
+print(result)
