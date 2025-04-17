@@ -6,3 +6,6 @@ def count_products(orders: list[str]) -> defaultdict:
     for product in orders:
         product_count[product] +=1
         return product_count
+    
+
+orders = ['lapto', 'smartphone', 'laptop', 'tablet']
