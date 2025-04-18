@@ -3,8 +3,13 @@ def log_transaction(func):
         print('Log de transacción...')
         func()
         print('log terminado...')
-    return wrapper()
+    return wrapper
+
+
+
+@log_transaction
 
 def process_payment():
     print('Procesando el pago...')
 
+process_payment()
