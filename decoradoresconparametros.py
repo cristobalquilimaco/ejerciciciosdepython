@@ -24,3 +24,9 @@ def log_action(func):
 def delete_employee(employee):
     print(f'El empleado {employee['name']}, ha sido eliminado')
 
+
+admin = {'name': 'Carlos', 'role': 'admin'}
+employee = {'name': 'Ana', 'role': 'employee'}
+
+delete_employee(admin)
+delete_employee(employee)
